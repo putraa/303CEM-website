@@ -1,0 +1,222 @@
+html, body {
+    background-color: #e5e5e5;
+    margin: 0;
+    height: 100%;
+}
+
+#main-container {
+    border-left-style: solid;
+    border-right: solid;
+    border-width: 1px;
+    border-color: #b1b1b1;
+    background-color: #f9f9f9;
+    height: 100%;
+}
+
+/* ## Navigation Bar ## */
+.row.content {height: 1000px}
+
+.sidenav {
+  height: 100%;
+  position: inherit
+}
+
+#main-logo {
+    margin-top: 40px;
+    margin-bottom: 30px
+}
+
+#side-bar {color: #545454;}
+
+#nav-pill-container {
+    background-color: #eeeeee;
+    padding: 12px;
+}
+
+.nav-pills > li.active > a, 
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+    background-color: #efc500;
+    color: #545454;
+}
+
+#help-feedback-button {
+    background-color: #545454;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+#nav-footer {
+    position: absolute;
+    bottom: 0;
+}
+
+#nav-footer li {
+    padding-right: 15px;
+    display: inline;
+}
+
+/* On small screens, set height to 'auto' for the grid */
+@media screen and (max-width: 767px) {
+  .row.content {height: auto;} 
+}
+
+#mobile-header {background-color: white;}
+.mobile-NavBar {background-color: #f1f1f1;}
+
+
+
+/* ## Main Window ## */
+#account-name {
+    position: absolute;
+    right: 20px;
+}
+
+#account-dropdown {
+    position: relative;
+    top: 31px;
+    left: 100px;
+}
+
+.btn-disabled {
+   pointer-events: none;
+   cursor: default;
+}
+
+#main-bar h2 {
+    font-weight: bold;
+}
+
+#main-bar p {
+    display: inline;
+}
+
+#main-actionbar {
+    display: inline;
+    position: absolute;
+    right: 15px;
+}
+
+#main-actionbar a {
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+#main-actionbar li {
+    display: inline;
+    margin: 8px;
+}
+
+
+/* POPUP ANIMATION - all way until bottom! */
+/* Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.4s;
+    animation: animatezoom 0.4s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #ffffff;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    min-width: 300px;
+}
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 13px;
+}
+
+.close:hover,
+.close:focus {
+    color: #767676;
+    cursor: pointer;
+}
+
+#form-login-title {
+    font-size: 25px;
+    margin: 22px;
+}
+
+#form-input-area {
+    padding: 35px;
+    border: 1px solid #ccc;
+}
+
+#form-input-area hr {
+    height: 8px;
+    width: 100px;
+    background-color: #fdd21b;
+}
+
+.add_data_icon {
+    width: 30px;
+}
+
+input[type=text], input[type=date] {
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#form-checkbox {
+    font-weight: 100;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+#form-login-button {
+    font-weight: bold;
+    position: absolute;
+    width: 80px;
+    right: 32px;
+}

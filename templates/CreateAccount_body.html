@@ -1,0 +1,29 @@
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="glyphicon glyphicon-th"></span>
+      </button>
+      <a class="navbar-brand" href="/"><img alt="Bank of GREAT BRITAIN" src="{{ url_for('static', filename='images/imgLogo_min.png') }}" height="27" width="115"/></a>
+    </div>
+  </div>
+</nav>
+
+<br>
+<div class="container row-center">
+    <div class="col-sm-6 info-row">
+      <p id="info-title">Re-create how<br/>you see finance</p>
+      <p id="info-desc">People always try to complicate financial management by terms and tools.<br/><br/>well.. it was always been easy for us.</p>
+    </div>
+    <div class="col-sm-6">
+    <form method="post">
+      <input type="text" class="form-control" name="mk_fullname" placeholder="Full Name" value="{{request.form.mk_fullname}}"><br>
+      <input type="text" class="form-control" name="mk_email" placeholder="Email" value="{{request.form.mk_email}}"><br>
+      <input type="password" class="form-control" name="mk_password" placeholder="Password" value="{{request.form.mk_password}}"><br>
+      <input type="password" class="form-control" name="mk_confirm_password" placeholder="Confirm Password" value="{{request.form.mk_confirm_password}}"><br>
+      <label><input type="checkbox"> I agree with the Spendboss Privacy Terms and Agreement</label>
+      <br>
+      <input id="form-login-button" class="btn btn-default" type="submit" value="Sign Up">
+    </form>
+    </div>
+</div>

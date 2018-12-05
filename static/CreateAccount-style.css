@@ -1,0 +1,18 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.info-row {
+    color: #545454;
+}
+
+#info-title {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 33px;
+}
+
+#info-desc {
+    font-size: 20px;
+}

@@ -1,0 +1,22 @@
+{% extends 'template_parent.html'%}
+
+{% block title%} Create Account {% endblock%}
+
+{% block head %}
+    {{super()}}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CreateAccount-style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='navbar-style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='footer-style.css') }}" />
+{% endblock %}
+
+{% block content%}
+
+    <!-- BUG: it does not update with the css if I CHANGE or REMOVE all of the file content,
+    but if I remove the css reference the style is gone! The only way to change it is to change the whole file entirely.
+    That is why signup has different name format(CamelCase). Additionally, Div tag with that height will do for now. -->
+
+    {% include 'CreateAccount_body.html'%}
+    <div style="height: 270px;"></div>
+    {% include 'footer_body.html'%}
+
+{% endblock %}
